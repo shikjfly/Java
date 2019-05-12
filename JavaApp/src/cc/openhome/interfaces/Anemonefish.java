@@ -6,6 +6,6 @@ public class Anemonefish extends Fish {
     }
     @Override
     public void swim(){
-        System.out.printf("小丑鱼 %s 游泳 %n", name);
+        System.out.printf("小丑鱼： %s---- 游泳 %n", name);
     }
 }

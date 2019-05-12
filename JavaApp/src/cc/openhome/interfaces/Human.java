@@ -1,13 +1,15 @@
 package cc.openhome.interfaces;
 
-public abstract class Fish implements Swimmer {
+public class Human implements Swimmer {
     protected String name;
-    public Fish(String name) {
+    public Human(String name) {
         this.name = name;
     }
     public String getName(){
         return name;
     }
     @Override
-    public abstract void swim();
+    public void swim(){
+        System.out.printf("人类： %s ---- 游泳 %n", name);
+    }
 }
