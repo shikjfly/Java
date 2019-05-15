@@ -6,6 +6,10 @@ public class Game {
     public static void main(String[] args) {
         play(1);
         play(3);
+        Service service = new Service();
+        service.execute();
+        service.doSome();
+        service.doOther();
     }
     public static void play(int action) {
         switch(action) {
