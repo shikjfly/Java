@@ -1,13 +1,10 @@
 package cc.openhome.interfaces;
 
-public class Seaplane implements Swimmer, Flyer {
-    private String name;
+public class Seaplane extends Airplane implements Swimmer {
     public Seaplane(String name) {
-        this.name = name;
+        super(name);
     }
-    public String getName(){
-        return name;
-    }
+
     @Override
     public void swim(){
         System.out.printf("海上飞机： %s ---- 在海面航行 %n", name);
@@ -15,6 +12,7 @@ public class Seaplane implements Swimmer, Flyer {
     
     @Override
     public void fly(){
-        System.out.printf("海上飞机： %s ---- 在天空飞行 %n", name);
+        System.out.printf("海上");
+        super.fly();
     }
 }
