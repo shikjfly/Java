@@ -34,6 +34,7 @@ public class TestOperator01 {
         
         System.out.println(-9%5);
         
+ 
         //测试自增和自减
         int x = 3;
         int y = x++; //执行完后，y=3。 x先给y赋值，然后再自增。
@@ -41,6 +42,17 @@ public class TestOperator01 {
         x = 3;
         y = ++x;   //执行完后，y=4。 x先自增，再给y赋值。     
         System.out.println("\nx=" + x + "\ny=" + y);
+
+        
+        //测试赋值
+        int n1 = 3;
+        int n2 = 4;
+        n1 += n2; // 相当于n1 = n1+n2 = 7
+        System.out.println("n1=" + n1 + "\nn2=" + n2);
+        n1 = 3;
+        n1 *= n2 + 3;   //相当于n1 = n1*(n2+3) = 3*7=21 
+        System.out.println("n1=" + n1 + "\nn2=" + n2);
+        
     }   
   
 }
