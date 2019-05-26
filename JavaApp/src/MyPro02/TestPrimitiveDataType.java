@@ -24,7 +24,7 @@ public class TestPrimitiveDataType {
         System.out.println(c);
         System.out.println(d);
         
-        byte age = 30;
+        byte age = 30;//整型常量默认是int类型，30是int类型，范围在byte内，所以会自动转化为byte，如果是300，那就不可以了，因为超出了byte范围
         short salary = 30000;
         int population = 2000000000; //整型常量默认是int类型
         long globalPopulation = 7400000000L; //后面加L就是说这是一个long类型
