@@ -3,6 +3,8 @@ package MyPro01;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 
 public class BallGame extends JFrame{
@@ -40,6 +42,18 @@ public class BallGame extends JFrame{
         setSize(850,500);
         setLocation(50,50);
         setVisible(true);
+        
+        
+        /**
+         * 增加监听事件，关闭窗口的时候，把系统也关了
+         */
+        this.addWindowListener(new WindowAdapter(){
+          @Override
+          public void windowClosing(WindowEvent e) {
+            System.exit(0);
+          }      
+        });
+        
         
         //        重画窗口⑥
         while (true) {            
