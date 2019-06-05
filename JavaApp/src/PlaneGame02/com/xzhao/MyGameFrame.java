@@ -1,5 +1,6 @@
 package PlaneGame02.com.xzhao;
 
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -15,8 +16,8 @@ import javax.swing.JFrame;
  */
 public class MyGameFrame extends JFrame{
   
-  Image ball = GameUtil.getImage("images/ball.png");
-//  Image ball = Toolkit.getDefaultToolkit().getImage("images/ball.png");
+  //Image ball = GameUtil.getImage("PlaneGame02/images/desk.jpg");
+  Image ball = Toolkit.getDefaultToolkit().getImage("images/ball.png");
   
   @Override
   public void paint(Graphics g) { //自动被调用，g相当于一只画笔
@@ -25,7 +26,7 @@ public class MyGameFrame extends JFrame{
     g.drawImage(ball, 200, 200, null);
     
     Color c = g.getColor();
-    Font f = g.getFont();    
+    Font f = g.getFont();
     g.setColor(Color.blue);
     
     g.drawLine(100, 100, 300, 300);

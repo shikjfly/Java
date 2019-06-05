@@ -12,13 +12,16 @@ import java.net.URL;
 import javax.imageio.ImageIO;
 
 /**
- *加载图片的工具类
+ * 加载图片的工具类
+ *
  * @author 施克箭
  */
 public class GameUtil {
+
   //工具类最好将构造器私有化
-  private GameUtil(){    
+  private GameUtil() {
   }
+
   public static Image getImage(String path) {
     BufferedImage bi = null;
     try {
